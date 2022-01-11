@@ -11,6 +11,9 @@
 		0414EBAC278DFAFE0015ED7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414EBAB278DFAFE0015ED7A /* ContentView.swift */; };
 		0414EBAE278DFB000015ED7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0414EBAD278DFB000015ED7A /* Assets.xcassets */; };
 		0414EBB1278DFB000015ED7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0414EBB0278DFB000015ED7A /* Preview Assets.xcassets */; };
+		0414EBBB278E33890015ED7A /* chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0414EBB8278E33860015ED7A /* chair.usdz */; };
+		0414EBBC278E33890015ED7A /* nike.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0414EBB9278E33870015ED7A /* nike.usdz */; };
+		0414EBBD278E33890015ED7A /* andriod.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0414EBBA278E33890015ED7A /* andriod.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		0414EBAB278DFAFE0015ED7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0414EBAD278DFB000015ED7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0414EBB0278DFB000015ED7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0414EBB8278E33860015ED7A /* chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair.usdz; sourceTree = "<group>"; };
+		0414EBB9278E33870015ED7A /* nike.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = nike.usdz; sourceTree = "<group>"; };
+		0414EBBA278E33890015ED7A /* andriod.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = andriod.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 		0414EBA8278DFAFE0015ED7A /* LENA */ = {
 			isa = PBXGroup;
 			children = (
+				0414EBB7278E33190015ED7A /* 3D Assets */,
 				0414EBA9278DFAFE0015ED7A /* LENAApp.swift */,
 				0414EBAB278DFAFE0015ED7A /* ContentView.swift */,
 				0414EBAD278DFB000015ED7A /* Assets.xcassets */,
@@ -65,6 +72,16 @@
 				0414EBB0278DFB000015ED7A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0414EBB7278E33190015ED7A /* 3D Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0414EBBA278E33890015ED7A /* andriod.usdz */,
+				0414EBB8278E33860015ED7A /* chair.usdz */,
+				0414EBB9278E33870015ED7A /* nike.usdz */,
+			);
+			path = "3D Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +142,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0414EBBC278E33890015ED7A /* nike.usdz in Resources */,
 				0414EBB1278DFB000015ED7A /* Preview Assets.xcassets in Resources */,
+				0414EBBB278E33890015ED7A /* chair.usdz in Resources */,
 				0414EBAE278DFB000015ED7A /* Assets.xcassets in Resources */,
+				0414EBBD278E33890015ED7A /* andriod.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
