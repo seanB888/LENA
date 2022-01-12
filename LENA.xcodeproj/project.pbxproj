@@ -14,6 +14,7 @@
 		0414EBBB278E33890015ED7A /* chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0414EBB8278E33860015ED7A /* chair.usdz */; };
 		0414EBBC278E33890015ED7A /* nike.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0414EBB9278E33870015ED7A /* nike.usdz */; };
 		0414EBBD278E33890015ED7A /* andriod.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0414EBBA278E33890015ED7A /* andriod.usdz */; };
+		046A7E96278E721E00BDC33B /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A7E95278E721E00BDC33B /* BrowseView.swift */; };
 		04C29447278E436E00DB460B /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C29446278E436E00DB460B /* ControlView.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		0414EBB8278E33860015ED7A /* chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair.usdz; sourceTree = "<group>"; };
 		0414EBB9278E33870015ED7A /* nike.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = nike.usdz; sourceTree = "<group>"; };
 		0414EBBA278E33890015ED7A /* andriod.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = andriod.usdz; sourceTree = "<group>"; };
+		046A7E95278E721E00BDC33B /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		04C29446278E436E00DB460B /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 				0414EBB7278E33190015ED7A /* 3D Assets */,
 				0414EBA9278DFAFE0015ED7A /* LENAApp.swift */,
 				0414EBAB278DFAFE0015ED7A /* ContentView.swift */,
+				046A7E95278E721E00BDC33B /* BrowseView.swift */,
 				04C29446278E436E00DB460B /* ControlView.swift */,
 				0414EBAD278DFB000015ED7A /* Assets.xcassets */,
 				0414EBAF278DFB000015ED7A /* Preview Content */,
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046A7E96278E721E00BDC33B /* BrowseView.swift in Sources */,
 				0414EBAC278DFAFE0015ED7A /* ContentView.swift in Sources */,
 				04C29447278E436E00DB460B /* ControlView.swift in Sources */,
 				0414EBAA278DFAFE0015ED7A /* LENAApp.swift in Sources */,
