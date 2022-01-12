@@ -46,6 +46,7 @@ struct ModelsByCategoryGrid: View {
 }
 
 struct HorizontalGrid: View {
+    @EnvironmentObject var placementSettings: PlacementSettings
     @Binding var showBrowse: Bool
     
     var title: String
@@ -70,7 +71,8 @@ struct HorizontalGrid: View {
                         ItemButton(model: model) {
                             // Call model method to async load modelEntity
                             model.asyncLoadModelEntity()
-                            // TODO: Select model for placement
+                            // Select model for placement
+                            self.placementSettings.selectedModel = model
                             print("\(model.name) thumbnail tapped.")
                             self.showBrowse = false
                         }

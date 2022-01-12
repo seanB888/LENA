@@ -16,6 +16,10 @@
 		0414EBBD278E33890015ED7A /* andriod.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0414EBBA278E33890015ED7A /* andriod.usdz */; };
 		046A7E96278E721E00BDC33B /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A7E95278E721E00BDC33B /* BrowseView.swift */; };
 		046A7E99278E8BF200BDC33B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A7E98278E8BF200BDC33B /* Model.swift */; };
+		046A7E9C278EACD900BDC33B /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A7E9B278EACD900BDC33B /* PlacementSettings.swift */; };
+		046A7E9E278EB09100BDC33B /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A7E9D278EB09100BDC33B /* PlacementView.swift */; };
+		048C5BD9278F2D8A00A5E73F /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 048C5BD8278F2D8A00A5E73F /* FocusEntity */; };
+		048C5BDB278F2DC000A5E73F /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C5BDA278F2DC000A5E73F /* CustomARView.swift */; };
 		04C29447278E436E00DB460B /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C29446278E436E00DB460B /* ControlView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +34,9 @@
 		0414EBBA278E33890015ED7A /* andriod.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = andriod.usdz; sourceTree = "<group>"; };
 		046A7E95278E721E00BDC33B /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		046A7E98278E8BF200BDC33B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		046A7E9B278EACD900BDC33B /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
+		046A7E9D278EB09100BDC33B /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
+		048C5BDA278F2DC000A5E73F /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 		04C29446278E436E00DB460B /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -38,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048C5BD9278F2D8A00A5E73F /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +73,8 @@
 			children = (
 				046A7E97278E8BDE00BDC33B /* Model */,
 				0414EBB7278E33190015ED7A /* 3D Assets */,
-				0414EBA9278DFAFE0015ED7A /* LENAApp.swift */,
 				046A7E9A278E8C0000BDC33B /* Views */,
+				0414EBA9278DFAFE0015ED7A /* LENAApp.swift */,
 				0414EBAD278DFB000015ED7A /* Assets.xcassets */,
 				0414EBAF278DFB000015ED7A /* Preview Content */,
 			);
@@ -103,8 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				0414EBAB278DFAFE0015ED7A /* ContentView.swift */,
+				048C5BDA278F2DC000A5E73F /* CustomARView.swift */,
 				046A7E95278E721E00BDC33B /* BrowseView.swift */,
 				04C29446278E436E00DB460B /* ControlView.swift */,
+				046A7E9B278EACD900BDC33B /* PlacementSettings.swift */,
+				046A7E9D278EB09100BDC33B /* PlacementView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +136,9 @@
 			dependencies = (
 			);
 			name = LENA;
+			packageProductDependencies = (
+				048C5BD8278F2D8A00A5E73F /* FocusEntity */,
+			);
 			productName = LENA;
 			productReference = 0414EBA6278DFAFE0015ED7A /* LENA.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +167,9 @@
 				Base,
 			);
 			mainGroup = 0414EB9D278DFAFE0015ED7A;
+			packageReferences = (
+				048C5BD7278F2D8A00A5E73F /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = 0414EBA7278DFAFE0015ED7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,11 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046A7E9C278EACD900BDC33B /* PlacementSettings.swift in Sources */,
 				046A7E99278E8BF200BDC33B /* Model.swift in Sources */,
 				046A7E96278E721E00BDC33B /* BrowseView.swift in Sources */,
 				0414EBAC278DFAFE0015ED7A /* ContentView.swift in Sources */,
 				04C29447278E436E00DB460B /* ControlView.swift in Sources */,
 				0414EBAA278DFAFE0015ED7A /* LENAApp.swift in Sources */,
+				048C5BDB278F2DC000A5E73F /* CustomARView.swift in Sources */,
+				046A7E9E278EB09100BDC33B /* PlacementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +415,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		048C5BD7278F2D8A00A5E73F /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		048C5BD8278F2D8A00A5E73F /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 048C5BD7278F2D8A00A5E73F /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0414EB9E278DFAFE0015ED7A /* Project object */;
 }
