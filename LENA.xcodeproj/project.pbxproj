@@ -15,6 +15,7 @@
 		0414EBBC278E33890015ED7A /* nike.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0414EBB9278E33870015ED7A /* nike.usdz */; };
 		0414EBBD278E33890015ED7A /* andriod.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0414EBBA278E33890015ED7A /* andriod.usdz */; };
 		046A7E96278E721E00BDC33B /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A7E95278E721E00BDC33B /* BrowseView.swift */; };
+		046A7E99278E8BF200BDC33B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A7E98278E8BF200BDC33B /* Model.swift */; };
 		04C29447278E436E00DB460B /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C29446278E436E00DB460B /* ControlView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		0414EBB9278E33870015ED7A /* nike.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = nike.usdz; sourceTree = "<group>"; };
 		0414EBBA278E33890015ED7A /* andriod.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = andriod.usdz; sourceTree = "<group>"; };
 		046A7E95278E721E00BDC33B /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		046A7E98278E8BF200BDC33B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		04C29446278E436E00DB460B /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,11 +63,10 @@
 		0414EBA8278DFAFE0015ED7A /* LENA */ = {
 			isa = PBXGroup;
 			children = (
+				046A7E97278E8BDE00BDC33B /* Model */,
 				0414EBB7278E33190015ED7A /* 3D Assets */,
 				0414EBA9278DFAFE0015ED7A /* LENAApp.swift */,
-				0414EBAB278DFAFE0015ED7A /* ContentView.swift */,
-				046A7E95278E721E00BDC33B /* BrowseView.swift */,
-				04C29446278E436E00DB460B /* ControlView.swift */,
+				046A7E9A278E8C0000BDC33B /* Views */,
 				0414EBAD278DFB000015ED7A /* Assets.xcassets */,
 				0414EBAF278DFB000015ED7A /* Preview Content */,
 			);
@@ -88,6 +89,24 @@
 				0414EBB9278E33870015ED7A /* nike.usdz */,
 			);
 			path = "3D Assets";
+			sourceTree = "<group>";
+		};
+		046A7E97278E8BDE00BDC33B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				046A7E98278E8BF200BDC33B /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		046A7E9A278E8C0000BDC33B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0414EBAB278DFAFE0015ED7A /* ContentView.swift */,
+				046A7E95278E721E00BDC33B /* BrowseView.swift */,
+				04C29446278E436E00DB460B /* ControlView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046A7E99278E8BF200BDC33B /* Model.swift in Sources */,
 				046A7E96278E721E00BDC33B /* BrowseView.swift in Sources */,
 				0414EBAC278DFAFE0015ED7A /* ContentView.swift in Sources */,
 				04C29447278E436E00DB460B /* ControlView.swift in Sources */,
