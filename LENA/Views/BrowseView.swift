@@ -68,7 +68,8 @@ struct HorizontalGrid: View {
                         let model = items[index]
                         
                         ItemButton(model: model) {
-                            // TODO: Call model method to async load modelEntity
+                            // Call model method to async load modelEntity
+                            model.asyncLoadModelEntity()
                             // TODO: Select model for placement
                             print("\(model.name) thumbnail tapped.")
                             self.showBrowse = false
