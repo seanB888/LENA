@@ -55,14 +55,13 @@ struct ControlVisibilityToggleButton: View {
 }
 
 struct ControlButtonBar: View {
+    @EnvironmentObject var placementSettings: PlacementSettings
     @Binding var showBrowse: Bool
     
     var body: some View {
         HStack {
-           // MostRecentlyPlaced button
-            ControlButton(imageIcon: "clock.fill") {
-                print("Recent button pressed.")
-            }
+            // MostRecentlyPlaced button (this button start out hidden until an object has been placed on the seen.
+            mostRecentlyPlaceButton().hidden(self.placementSettings.recentlyPlaced.isEmpty)
             
             Spacer()
             // Browse buttton
@@ -76,7 +75,7 @@ struct ControlButtonBar: View {
             
             Spacer()
             // Settings button
-            ControlButton(imageIcon: "clock") {
+            ControlButton(imageIcon: "slider.horizontal.3") {
                 print("Settings button pressed.")
             }
         }
@@ -100,5 +99,34 @@ struct ControlButton: View {
                 .buttonStyle(PlainButtonStyle())
         }
         .frame(width: 50, height: 50)
+    }
+}
+
+struct mostRecentlyPlaceButton: View {
+    @EnvironmentObject var placementSettings: PlacementSettings
+    
+    var body: some View {
+        Button(action: {
+            print("mostRecentlyPlaceButton pressed")
+            // allows to place multiple models im an ARView scene
+            self.placementSettings.selectedModel = self.placementSettings.recentlyPlaced.last
+        }) {
+            if let mostRecentlyPlacedModel = self.placementSettings.recentlyPlaced.last {
+                // if not empty
+                Image(uiImage: mostRecentlyPlacedModel.thumbnail)
+                    .resizable()
+                    .frame(width: 46)
+                    .aspectRatio(1/1, contentMode: .fit)
+            } else {
+                // if there is no image
+                Image(systemName: "clock.fill")
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .buttonStyle(PlainButtonStyle())
+            }
+        }
+        .frame(width: 50, height: 50)
+        .background(Color.white)
+        .cornerRadius(8.0)
     }
 }

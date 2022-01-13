@@ -74,7 +74,7 @@ struct Models {
     
     init() {
         // Robots
-        let robot = Model(name: "andriod", category: .robot, scaleCompensation: 1.0)
+        let robot = Model(name: "andriod", category: .robot, scaleCompensation: 5.7)
         
         self.all += [robot]
         

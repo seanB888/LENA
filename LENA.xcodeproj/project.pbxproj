@@ -20,6 +20,7 @@
 		046A7E9E278EB09100BDC33B /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A7E9D278EB09100BDC33B /* PlacementView.swift */; };
 		048C5BD9278F2D8A00A5E73F /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 048C5BD8278F2D8A00A5E73F /* FocusEntity */; };
 		048C5BDB278F2DC000A5E73F /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C5BDA278F2DC000A5E73F /* CustomARView.swift */; };
+		048C5BDE278F8E7D00A5E73F /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C5BDD278F8E7D00A5E73F /* View+Extensions.swift */; };
 		04C29447278E436E00DB460B /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C29446278E436E00DB460B /* ControlView.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		046A7E9B278EACD900BDC33B /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
 		046A7E9D278EB09100BDC33B /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
 		048C5BDA278F2DC000A5E73F /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		048C5BDD278F8E7D00A5E73F /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		04C29446278E436E00DB460B /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 		0414EBA8278DFAFE0015ED7A /* LENA */ = {
 			isa = PBXGroup;
 			children = (
+				048C5BDC278F8E5D00A5E73F /* Components */,
 				046A7E97278E8BDE00BDC33B /* Model */,
 				0414EBB7278E33190015ED7A /* 3D Assets */,
 				046A7E9A278E8C0000BDC33B /* Views */,
@@ -110,14 +113,22 @@
 		046A7E9A278E8C0000BDC33B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0414EBAB278DFAFE0015ED7A /* ContentView.swift */,
-				048C5BDA278F2DC000A5E73F /* CustomARView.swift */,
 				046A7E95278E721E00BDC33B /* BrowseView.swift */,
+				0414EBAB278DFAFE0015ED7A /* ContentView.swift */,
 				04C29446278E436E00DB460B /* ControlView.swift */,
+				048C5BDA278F2DC000A5E73F /* CustomARView.swift */,
 				046A7E9B278EACD900BDC33B /* PlacementSettings.swift */,
 				046A7E9D278EB09100BDC33B /* PlacementView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		048C5BDC278F8E5D00A5E73F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				048C5BDD278F8E7D00A5E73F /* View+Extensions.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				046A7E9C278EACD900BDC33B /* PlacementSettings.swift in Sources */,
+				048C5BDE278F8E7D00A5E73F /* View+Extensions.swift in Sources */,
 				046A7E99278E8BF200BDC33B /* Model.swift in Sources */,
 				046A7E96278E721E00BDC33B /* BrowseView.swift in Sources */,
 				0414EBAC278DFAFE0015ED7A /* ContentView.swift in Sources */,
