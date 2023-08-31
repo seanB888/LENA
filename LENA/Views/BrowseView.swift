@@ -64,7 +64,8 @@ struct ModelsByCategoryGrid: View {
             ForEach(ModelCategory.allCases, id: \.self) { category in
                 
                 // Only display grid if category contains items
-                if let modelsByCategory = models.get(category: category) {
+                let modelsByCategory = models.get(category: category)
+                if !modelsByCategory.isEmpty {
                     HorizontalGrid(showBrowse: $showBrowse, title: category.label, items: modelsByCategory)
                 }
             }
@@ -91,7 +92,7 @@ struct HorizontalGrid: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: gridItemLayout, spacing: 30) {
-                    ForEach(0..<items.count) { index in
+                    ForEach(items.indices, id: \.self) { index in
                         
                         let model = items[index]
                         
