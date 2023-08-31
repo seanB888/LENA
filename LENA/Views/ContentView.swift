@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealityKit
+import simd
 
 struct ContentView: View {
     @EnvironmentObject var placementSettings: PlacementSettings
@@ -72,7 +73,7 @@ struct ARViewContainer: UIViewRepresentable {
         arView.installGestures([.translation, .rotation], for: cloneEntity)
         
         ///3. Create an anchorEntity and add clonedEntity to the anchorEntity.
-        let anchorEntity = AnchorEntity(plane: .any)
+        let anchorEntity = AnchorEntity(world: matrix_identity_float4x4)
         anchorEntity.addChild(cloneEntity)
         
         ///4. Add the anchorEntity the arView.scene.
