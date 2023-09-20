@@ -55,7 +55,8 @@ This project is [MIT](./LICENSE) licensed.
 ## 📞 Contact
 
 - GitHub: [@seanB888](https://github.com/seanB888)
-- Email: your_email@example.com  <!-- Replace with your email -->
+- Email: hi@seanblake.info
+- Phone: (954) 324-7846
 
 ---
 
